@@ -3,7 +3,8 @@ import Questionario from '../components/Questionario'
 import QuestaoModel from '../model/questao'
 import { useRouter } from 'next/router'
 
-const BASE_URL = 'http://localhost:3000/api'
+//const BASE_URL = 'http://localhost:3000/api'  // Ambiente de desenvolvimento
+const BASE_URL = '/api' 
 
 export default function Home() {
 
@@ -67,8 +68,8 @@ export default function Home() {
       }
     })
   }
-console.log(questao)
-  return ( questao !== undefined ? (
+
+  return ( questao ? (
           <Questionario  questao={questao} 
               ultima={idProximaPergunta() === undefined}
               questaoRespondida={questaoRespondida}
