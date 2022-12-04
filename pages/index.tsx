@@ -4,7 +4,7 @@ import QuestaoModel from '../model/questao'
 import { useRouter } from 'next/router'
 
 //const BASE_URL = 'http://localhost:3000/api'  // Ambiente de desenvolvimento
-const BASE_URL = '/api' 
+const BASE_URL = '/api'   // Adequação para hospedagem na Vercel
 
 export default function Home() {
 
